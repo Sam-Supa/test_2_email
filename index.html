@@ -50,6 +50,38 @@
             border: 0;
         }
 
+        .three-columns {
+            text-align: center;
+            font-size: 0; /*This is very important if you style for Outlook*/
+            line-height: 0; /*This is very important if you style for Outlook*/
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
+
+        .three-columns .column {
+            width: 100%;
+            max-width: 200px;
+            display: inline-block; /*This will make the table align next to one another*/
+            vertical-align: top; /*This will make the table align next to one another*/
+            /*without these two above the column will stack up on one another instead of aling side by side*/ 
+
+        }
+
+        .padding {
+            padding: 15px; /*This will work to gether with 'vertical-align and display' in .three-columns .column*/
+        }
+
+        .three-columns .content {
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        a {
+            text-decoration: none; /*do away/get rid of the underline*/
+            color: #388CDA;
+            font-size: 16px;
+        }
+
             
         @media screen and (max-width: 600px;) { 
         }
@@ -65,7 +97,7 @@
         <div class="webkit">
 
             <table class="outer" align="center"> <!--This will align the display to be centered-->
-                <tr>
+                <tr> <!--tr  table row-->
                     <td> <!--td = table data, "tr>td>table" is a shorted hand -->
                         <table width="100%">
                             <tr> <!--tr>td>a>img-->
@@ -73,6 +105,91 @@
                                     <a href="#"><img src="./resources/img/w3newbie-white.png" width="180" alt="Logo" title="Logo"></a>
                                     
                                 </td> 
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#"><img src="./resources/img/1200x700.jpg" width="600px"
+                        alt="Banner" style="max-width: 100%;"></a>
+                    </td>  <!--at = alternative text-->
+                </tr>
+
+                <tr>
+                    <td>
+                        <table width="100%" style="border-spacing: 0;">
+                            <tr> <!--this will conatain 3 columns inside-->
+                                <td class="three-columns">
+
+                                    <table class="column">
+                                        <tr>
+                                            <td class="padding"> <!--it is a time for actual content-->
+                                                <table class="content">
+                                                    <tr>
+                                                        <td><a href="#"><img src="./resources/img/380x280.jpg" width="150px"
+                                                            alt="" style="max-width: ;150px"></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 10px;"> <!--padding will make the paragarph text does not wided like the img-->
+                                                            <p style="font-size: 17px; font-weight: bold;">APPLE WATCH</p>
+                                                            <p>Responsive HTML Email templates tat you can build around to master email development.</p>
+                                                            <a href="#">Learn more..</a>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <table class="column">
+                                        <tr>
+                                            <td class="padding"> <!--it is a time for actual content-->
+                                                <table class="content">
+                                                    <tr>
+                                                        <td><a href="#"><img src="./resources/img/380x280-2.jpg" width="150px"
+                                                            alt="" style="max-width: ;150px"></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 10px;"> <!--padding will make the paragarph text does not wided like the img-->
+                                                            <p style="font-size: 17px; font-weight: bold;">EAR PODS</p>
+                                                            <p>Responsive HTML Email templates tat you can build around to master email development.</p>
+                                                            <a href="#">Learn more..</a>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <table class="column">
+                                        <tr>
+                                            <td class="padding"> <!--it is a time for actual content-->
+                                                <table class="content">
+                                                    <tr>
+                                                        <td><a href="#"><img src="./resources/img/380x280-3.jpg" width="150px"
+                                                            alt="" style="max-width: ;150px"></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding: 10px;"> <!--padding will make the paragarph text does not wided like the img-->
+                                                            <p style="font-size: 17px; font-weight: bold;">WATCH BRAND</p>
+                                                            <p>Responsive HTML Email templates tat you can build around to master email development.</p>
+                                                            <a href="#">Learn more..</a>
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </td>
                             </tr>
 
                         </table>
