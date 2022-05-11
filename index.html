@@ -84,8 +84,21 @@
 
             
         @media screen and (max-width: 600px) { 
+            img .third-img-last {
+                width: 200px !important;
+                max-width: 200px !important;
+            }
+            .padding {
+                padding-right: 0 !important;  /*!important make it overwrite the original styles*/
+                padding-left: 0 !important;
+            }
         }
         @media screen and (max-width: 400px) { 
+            img .third-img{ 
+                width: 200px !important;
+                max-width: 200px !important;
+            }
+
         }
 
 
@@ -128,7 +141,7 @@
                                             <td class="padding"> <!--it is a time for actual content-->
                                                 <table class="content">
                                                     <tr>
-                                                        <td><a href="#"><img src="./resources/img/380x280.jpg" width="150px"
+                                                        <td><a href="#"><img class="thrid-img" src="./resources/img/380x280.jpg" width="150px"
                                                             alt="" style="max-width: 150px ;"></a></td>
                                                     </tr>
                                                     <tr>
@@ -150,7 +163,7 @@
                                             <td class="padding"> <!--it is a time for actual content-->
                                                 <table class="content">
                                                     <tr>
-                                                        <td><a href="#"><img src="./resources/img/380x280-2.jpg" width="150px"
+                                                        <td><a href="#"><img class="thrid-img" src="./resources/img/380x280-2.jpg" width="150px"
                                                             alt="" style="max-width: 150px ;"></a></td>
                                                     </tr>
                                                     <tr>
@@ -172,7 +185,7 @@
                                             <td class="padding"> <!--it is a time for actual content-->
                                                 <table class="content">
                                                     <tr>
-                                                        <td><a href="#"><img src="./resources/img/380x280-3.jpg" width="150px"
+                                                        <td><a href="#"><img class="third-img-last" src="./resources/img/380x280-3.jpg" width="150px"
                                                             alt="" style="max-width: 150px ;"></a></td>
                                                     </tr>
                                                     <tr>
@@ -224,13 +237,25 @@
                         <table width="100%" style="border-spacing: 0;">
 
                             <tr>
-                                <td style="padding: 20px; text-align: center;">
-                                <a href="#"><img src="./resources/img/w3newbie.png" alt="" width="160px"></a>
-                                <p style="font-size: 16px; Margin-top: 18px; Margin-bottom: 10px;">w3newbie HTML Email</p>
-                                <p style="font-size: 16px; Margin-bottom: 10px;">123 Street Road, City, State 55555</p>
-                                <p><a href="mailto:email@example.com"></a></p>
+                                <td style="padding: 20px; text-align: center; padding-bottom: 10px;">
+                                    <a href="#"><img src="./resources/img/w3newbie.png" alt="" width="160px"></a>
+                                    <p style="font-size: 16px; Margin-top: 18px; Margin-bottom: 10px;">w3newbie HTML Email</p>
+                                    <p style="font-size: 16px; Margin-bottom: 10px;">123 Street Road, City, State 55555</p>
+                                    <p><a href="mailto:email@example.com">email@example.com</a></p> <!--link to the email, it will prompt to the email when clicked-->
+                                    <p><a href="tel:180088888">1-800-888-888</a></p> <!--similar to email but it is phone call-->
                             
-                            </td>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="center" style="padding-bottom: 25px; text-align: center;">
+                                    
+                                    <p><a href="#" style="font-size: 13px;">UNSCRIBE</a></p> 
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td height="20px" style="background-color: #388CDA;"></td>
                             </tr>
 
 
